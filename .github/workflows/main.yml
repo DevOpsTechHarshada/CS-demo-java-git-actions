@@ -27,13 +27,24 @@ jobs:
       
       # Determine what the next tag version will be
       - name: Github Tag Bump
+        id: get-tag
         uses: anothrNick/github-tag-action@1.39.0
         env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               DRY_RUN: true
+            
               
-      - name: Maven Build and Deploy
-        uses: 
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+          cache: 'maven'
+
+      - name: Build with Maven
+        run: | 
+          echo 'Tag generated in previous step'
+          echo '${{ steps.get-tag.outputs.tag }}'
+          
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
