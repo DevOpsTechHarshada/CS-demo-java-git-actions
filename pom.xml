@@ -16,6 +16,13 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	<distributionManagement>
+    		<repository>
+			<id>github-public</id>
+    			<url>https://public:&#103;hp_lmipC48581pJXrkzBX4hMacnWqkV3G017xyl@maven.pkg.github.com/DevOpsTechHarshada/CS-demo-java-git-actions</url>
+    		</repository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
