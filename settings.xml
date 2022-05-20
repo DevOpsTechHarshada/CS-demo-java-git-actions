@@ -7,19 +7,19 @@
       <password>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</password>
     </server>
   </servers>-->
-<!-- <servers>
+  <servers>
     <server>
       <id>github</id>
       <configuration>
         <httpHeaders>
           <property>
             <name>Authorization</name>
-            <value>&#103;hp_lmipC48581pJXrkzBX4hMacnWqkV3G017xyl</value>
+            <value>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</value>
           </property>
         </httpHeaders>
       </configuration>
     </server>
-  </servers> -->
+  </servers>
   <profiles>
 		<profile>
 			<id>github</id>
