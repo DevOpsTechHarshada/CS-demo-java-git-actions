@@ -44,6 +44,8 @@ jobs:
         run: | 
           echo 'Tag generated in previous step'
           echo '${{ steps.get-tag.outputs.new_tag }}'
+          mvn versions:set -DnewVersion=${{ steps.get-tag.outputs.new_tag }}
+          mvn deploy
           
 
       # Runs a single command using the runners shell
