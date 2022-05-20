@@ -23,13 +23,6 @@
       			<url>https://maven.pkg.github.com/DevOpsTechHarshada/CS-demo-java-git-actions</url>
     		</repository>
 	</distributionManagement>
-	<servers>
-		<server>
-     			<id>github</id>
-    			<username>DevOpsTechHarshada</username>
-     			<password>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</password>
-     		</server>
-	</servers>
 	<profiles>
 		<profile>
 			<id>github</id>
