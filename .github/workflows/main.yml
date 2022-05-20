@@ -59,7 +59,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          title: CreateRelease
+          title: '{{ steps.get-tag.outputs.new_tag }}'
           
       - name: Bump GitHub Tag
         uses: anothrNick/github-tag-action@1.39.0
