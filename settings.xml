@@ -7,7 +7,7 @@
       <password>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</password>
     </server>
   </servers>-->
- <servers>
+<!-- <servers>
     <server>
       <id>github</id>
       <configuration>
@@ -19,7 +19,7 @@
         </httpHeaders>
       </configuration>
     </server>
-  </servers>
+  </servers> -->
   <profiles>
 		<profile>
 			<id>github</id>
