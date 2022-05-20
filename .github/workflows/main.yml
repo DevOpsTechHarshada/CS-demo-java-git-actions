@@ -43,7 +43,7 @@ jobs:
       - name: Build with Maven
         run: | 
           echo 'Tag generated in previous step'
-          echo '${{ steps.get-tag.outputs.tag }}'
+          echo '${{ steps.get-tag.outputs.new_tag }}'
           
 
       # Runs a single command using the runners shell
