@@ -36,7 +36,7 @@ jobs:
       # Build and publish application to GitHub packages     
       - uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
+          distribution: 'adopt'
           java-version: '11'
           cache: 'maven'
           server-id: github
@@ -48,7 +48,8 @@ jobs:
           echo 'Tag generated in previous step'
           echo '${{ steps.get-tag.outputs.new_tag }}'
           mvn versions:set -DnewVersion=${{ steps.get-tag.outputs.new_tag }}
-          mvn clean package -DattachMuleSources -Pgithub deploy
+          mvn --batch-mode deploy
+         
         env:
           GITHUB_USER_REF: ${{ secrets.GIT_USERNAME }}
           GITHUB_TOKEN_REF: ${{ secrets.GIT_TOKEN }}
