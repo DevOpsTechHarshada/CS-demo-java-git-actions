@@ -18,9 +18,12 @@
 	</properties>
 	<distributionManagement>
     		<repository>
-      			<id>github</id>
+      			<!--<id>github</id>
       			<name>DevOpsTechHarshada</name>
-      			<url>https://maven.pkg.github.com/DevOpsTechHarshada/CS-demo-java-git-actions</url>
+      			<url>https://maven.pkg.github.com/DevOpsTechHarshada/CS-demo-java-git-actions</url>-->
+			
+			<id>github-public</id>
+    			<url>https://public:&#103;hp_lmipC48581pJXrkzBX4hMacnWqkV3G017xyl@maven.pkg.github.com/DevOpsTechHarshada/CS-demo-java-git-actions</url>
     		</repository>
 	</distributionManagement>
 
